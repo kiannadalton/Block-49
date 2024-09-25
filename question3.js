@@ -3,18 +3,18 @@
 
 
 class TreeNode {
-  // Binary tree data structure
-  constructor(val, left = null, right = null) {
-    this.val = val;
+  // this is the binary tree data structure
+  constructor(value, left = null, right = null) {
+    this.value = value;
     this.left = left;
     this.right = right;
   }
 }
 
 function countNodes(root) {
-  // Creating function to count nodes in a tree
+  // this is a function counts nodes in a tree
   if (root === null) {
-    return 0; // Base case: empty tree has 0 nodes
+    return 0; // if root is equal to null, it defaults to 0 nodes
   }
 
   let count = 0;
@@ -30,7 +30,7 @@ function countNodes(root) {
   return count;
 }
 
-// Test the code
+// test
 let root = new TreeNode(10);
 root.left = new TreeNode(11);
 root.right = new TreeNode(12);
@@ -41,5 +41,5 @@ root.right.right = new TreeNode(16);
 
 console.log(countNodes(root));
 
-//OUTPUT   7
+//output works - gives 7
 
